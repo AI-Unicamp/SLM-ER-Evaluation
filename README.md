@@ -1,1 +1,1 @@
-# SLM-ER-Evaluation
+# Benchmarking Spoken Language Models for Speech Emotion Recognition
