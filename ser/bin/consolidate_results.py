@@ -9,15 +9,18 @@ import argparse
 from pathlib import Path
 
 map_emotion = {}
-map_emotion['neutral'] = 'neu'
-map_emotion['happy'] = 'hap'
-map_emotion['sad'] = 'sad'
-map_emotion['angry'] = 'ang'
 
-# map_emotion['neutral'] = 'neutral'
-# map_emotion['happy'] = 'happy'
+# This is for SER (because I trained using small names for emotions)
+# map_emotion['neutral'] = 'neu'
+# map_emotion['happy'] = 'hap'
 # map_emotion['sad'] = 'sad'
-# map_emotion['angry'] = 'angry'
+# map_emotion['angry'] = 'ang'
+
+# This is for SLM
+map_emotion['neutral'] = 'neutral'
+map_emotion['happy'] = 'happy'
+map_emotion['sad'] = 'sad'
+map_emotion['angry'] = 'angry'
 
 def extract_emotions(df):
     """Extract true and proxy emotions from filenames"""
