@@ -1,1 +1,1 @@
-# Benchmarking Spoken Language Models for Speech Emotion Recognition
+# Evaluating Spoken Language Models for Speech Emotion Recognition
