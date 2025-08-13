@@ -1,0 +1,70 @@
+=== Emotion Prediction Analysis Metrics ===
+
+*** TRUE EMOTION vs PREDICTED EMOTION ***
+Overall Accuracy: 0.2756 (27.56%)
+F1 Macro Score: 0.1281
+
+=== Confusion Matrix ===
+Rows: True Emotion (from filename)
+Columns: Predicted Emotion
+
+True\Predicted	angry	disgusted	happy	neutral	sad	the speaker felt joyous and emotional, as evidenced by the tears rolling down their cheeks during the wedding.	the speaker felt joyous and emotional.	the speaker felt nostalgic.
+angry		17	1	8	1	11	0	0	1
+disgusted		0	0	0	0	0	0	0	0
+happy		13	0	10	2	13	0	0	1
+neutral		13	1	8	2	14	0	1	0
+sad		14	1	8	1	14	1	0	0
+the speaker felt joyous and emotional, as evidenced by the tears rolling down their cheeks during the wedding.		0	0	0	0	0	0	0	0
+the speaker felt joyous and emotional.		0	0	0	0	0	0	0	0
+the speaker felt nostalgic.		0	0	0	0	0	0	0	0
+
+=== Detailed Classification Report ===
+                                                                                                                precision    recall  f1-score   support
+
+                                                                                                         angry       0.30      0.44      0.35        39
+                                                                                                     disgusted       0.00      0.00      0.00         0
+                                                                                                         happy       0.29      0.26      0.27        39
+                                                                                                       neutral       0.33      0.05      0.09        39
+                                                                                                           sad       0.27      0.36      0.31        39
+the speaker felt joyous and emotional, as evidenced by the tears rolling down their cheeks during the wedding.       0.00      0.00      0.00         0
+                                                                        the speaker felt joyous and emotional.       0.00      0.00      0.00         0
+                                                                                   the speaker felt nostalgic.       0.00      0.00      0.00         0
+
+                                                                                                      accuracy                           0.28       156
+                                                                                                     macro avg       0.15      0.14      0.13       156
+                                                                                                  weighted avg       0.30      0.28      0.26       156
+
+
+*** PROXY EMOTION vs PREDICTED EMOTION ***
+Overall Accuracy: 0.8590 (85.90%)
+F1 Macro Score: 0.3337
+
+=== Confusion Matrix ===
+Rows: Proxy Emotion (from filename)
+Columns: Predicted Emotion
+
+Proxy\Predicted	angry	disgusted	happy	neutral	sad	the speaker felt joyous and emotional, as evidenced by the tears rolling down their cheeks during the wedding.	the speaker felt joyous and emotional.	the speaker felt nostalgic.
+angry		50	0	0	2	0	0	0	0
+disgusted		0	0	0	0	0	0	0	0
+happy		5	3	34	4	2	1	1	2
+neutral		0	0	0	0	0	0	0	0
+sad		2	0	0	0	50	0	0	0
+the speaker felt joyous and emotional, as evidenced by the tears rolling down their cheeks during the wedding.		0	0	0	0	0	0	0	0
+the speaker felt joyous and emotional.		0	0	0	0	0	0	0	0
+the speaker felt nostalgic.		0	0	0	0	0	0	0	0
+
+=== Detailed Classification Report ===
+                                                                                                                precision    recall  f1-score   support
+
+                                                                                                         angry       0.88      0.96      0.92        52
+                                                                                                     disgusted       0.00      0.00      0.00         0
+                                                                                                         happy       1.00      0.65      0.79        52
+                                                                                                       neutral       0.00      0.00      0.00         0
+                                                                                                           sad       0.96      0.96      0.96        52
+the speaker felt joyous and emotional, as evidenced by the tears rolling down their cheeks during the wedding.       0.00      0.00      0.00         0
+                                                                        the speaker felt joyous and emotional.       0.00      0.00      0.00         0
+                                                                                   the speaker felt nostalgic.       0.00      0.00      0.00         0
+
+                                                                                                      accuracy                           0.86       156
+                                                                                                     macro avg       0.35      0.32      0.33       156
+                                                                                                  weighted avg       0.95      0.86      0.89       156

@@ -1,0 +1,118 @@
+=== Emotion Prediction Analysis Metrics ===
+
+*** TRUE EMOTION vs PREDICTED EMOTION ***
+Overall Accuracy: 0.2861 (28.61%)
+F1 Macro Score: 0.0593
+
+=== Confusion Matrix ===
+Rows: True Emotion (from filename)
+Columns: Predicted Emotion
+
+True\Predicted	angry	disgusted	dull	emptiness	happy	heavy	joyful	muttering	neutral	red	sad	satisfied	shocked	sleepy	tense	the speaker felt 'blushful'.	the speaker felt 'pleased' or 'content'.	the speaker felt joyous and emotional, as evidenced by the tears rolling down their cheeks during the wedding.	the speaker felt joyous and emotional.	the speaker felt nostalgic.
+angry		49	7	1	0	15	0	1	1	12	0	15	0	1	1	0	0	0	0	0	1
+disgusted		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+dull		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+emptiness		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+happy		32	6	1	0	19	0	1	0	21	0	22	0	0	0	0	0	1	0	0	1
+heavy		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+joyful		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+muttering		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+neutral		26	6	1	1	16	1	1	0	27	1	22	0	0	1	0	0	0	0	1	0
+red		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+sad		24	9	1	1	15	0	1	0	24	0	24	1	0	1	1	1	0	1	0	0
+satisfied		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+shocked		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+sleepy		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+tense		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the speaker felt 'blushful'.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the speaker felt 'pleased' or 'content'.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the speaker felt joyous and emotional, as evidenced by the tears rolling down their cheeks during the wedding.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the speaker felt joyous and emotional.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the speaker felt nostalgic.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+
+=== Detailed Classification Report ===
+                                                                                                                precision    recall  f1-score   support
+
+                                                                                                         angry       0.37      0.47      0.42       104
+                                                                                                     disgusted       0.00      0.00      0.00         0
+                                                                                                          dull       0.00      0.00      0.00         0
+                                                                                                     emptiness       0.00      0.00      0.00         0
+                                                                                                         happy       0.29      0.18      0.22       104
+                                                                                                         heavy       0.00      0.00      0.00         0
+                                                                                                        joyful       0.00      0.00      0.00         0
+                                                                                                     muttering       0.00      0.00      0.00         0
+                                                                                                       neutral       0.32      0.26      0.29       104
+                                                                                                           red       0.00      0.00      0.00         0
+                                                                                                           sad       0.29      0.23      0.26       104
+                                                                                                     satisfied       0.00      0.00      0.00         0
+                                                                                                       shocked       0.00      0.00      0.00         0
+                                                                                                        sleepy       0.00      0.00      0.00         0
+                                                                                                         tense       0.00      0.00      0.00         0
+                                                                                  the speaker felt 'blushful'.       0.00      0.00      0.00         0
+                                                                      the speaker felt 'pleased' or 'content'.       0.00      0.00      0.00         0
+the speaker felt joyous and emotional, as evidenced by the tears rolling down their cheeks during the wedding.       0.00      0.00      0.00         0
+                                                                        the speaker felt joyous and emotional.       0.00      0.00      0.00         0
+                                                                                   the speaker felt nostalgic.       0.00      0.00      0.00         0
+
+                                                                                                      accuracy                           0.29       416
+                                                                                                     macro avg       0.06      0.06      0.06       416
+                                                                                                  weighted avg       0.32      0.29      0.30       416
+
+
+*** PROXY EMOTION vs PREDICTED EMOTION ***
+Overall Accuracy: 0.7428 (74.28%)
+F1 Macro Score: 0.1582
+
+=== Confusion Matrix ===
+Rows: Proxy Emotion (from filename)
+Columns: Predicted Emotion
+
+Proxy\Predicted	angry	disgusted	dull	emptiness	happy	heavy	joyful	muttering	neutral	red	sad	satisfied	shocked	sleepy	tense	the speaker felt 'blushful'.	the speaker felt 'pleased' or 'content'.	the speaker felt joyous and emotional, as evidenced by the tears rolling down their cheeks during the wedding.	the speaker felt joyous and emotional.	the speaker felt nostalgic.
+angry		96	3	0	0	0	0	0	1	2	1	0	0	0	0	1	0	0	0	0	0
+disgusted		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+dull		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+emptiness		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+happy		10	8	0	0	64	0	4	0	5	0	5	1	1	0	0	1	1	1	1	2
+heavy		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+joyful		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+muttering		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+neutral		14	14	0	0	1	0	0	0	73	0	2	0	0	0	0	0	0	0	0	0
+red		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+sad		11	3	4	2	0	1	0	0	4	0	76	0	0	3	0	0	0	0	0	0
+satisfied		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+shocked		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+sleepy		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+tense		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the speaker felt 'blushful'.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the speaker felt 'pleased' or 'content'.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the speaker felt joyous and emotional, as evidenced by the tears rolling down their cheeks during the wedding.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the speaker felt joyous and emotional.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the speaker felt nostalgic.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+
+=== Detailed Classification Report ===
+                                                                                                                precision    recall  f1-score   support
+
+                                                                                                         angry       0.73      0.92      0.82       104
+                                                                                                     disgusted       0.00      0.00      0.00         0
+                                                                                                          dull       0.00      0.00      0.00         0
+                                                                                                     emptiness       0.00      0.00      0.00         0
+                                                                                                         happy       0.98      0.62      0.76       104
+                                                                                                         heavy       0.00      0.00      0.00         0
+                                                                                                        joyful       0.00      0.00      0.00         0
+                                                                                                     muttering       0.00      0.00      0.00         0
+                                                                                                       neutral       0.87      0.70      0.78       104
+                                                                                                           red       0.00      0.00      0.00         0
+                                                                                                           sad       0.92      0.73      0.81       104
+                                                                                                     satisfied       0.00      0.00      0.00         0
+                                                                                                       shocked       0.00      0.00      0.00         0
+                                                                                                        sleepy       0.00      0.00      0.00         0
+                                                                                                         tense       0.00      0.00      0.00         0
+                                                                                  the speaker felt 'blushful'.       0.00      0.00      0.00         0
+                                                                      the speaker felt 'pleased' or 'content'.       0.00      0.00      0.00         0
+the speaker felt joyous and emotional, as evidenced by the tears rolling down their cheeks during the wedding.       0.00      0.00      0.00         0
+                                                                        the speaker felt joyous and emotional.       0.00      0.00      0.00         0
+                                                                                   the speaker felt nostalgic.       0.00      0.00      0.00         0
+
+                                                                                                      accuracy                           0.74       416
+                                                                                                     macro avg       0.18      0.15      0.16       416
+                                                                                                  weighted avg       0.88      0.74      0.79       416

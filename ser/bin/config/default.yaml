@@ -1,0 +1,27 @@
+common:
+  seed: 42
+
+dataset:
+  _name: ESD # Changed name from IEMOCAP to ESD
+  # IMPORTANT: This path must point to the directory containing your
+  # extracted ESD features (esd_features/train.npy, etc.).
+  # Based on your Slurm script, this is typically:
+  # /home/lucas.ueda/github/SLM-ER-Evaluation/ser/scripts/esd_features
+  feat_path: /home/lucas.ueda/github/SLM-ER-Evaluation/ser/scripts/esd_features
+  # The following parameters are typically used for IEMOCAP's specific
+  # cross-validation splits and might not be directly used by your
+  # adapted training script for fixed ESD train/val/test splits.
+  batch_size: 128 # This will be overridden by your Slurm script's --batch_size argument if passed there
+
+optimization:
+  epoch: 100 # This will be overridden by your Slurm script's --epochs argument if passed there
+  lr: 5e-4 # This will be overridden by your Slurm script's --lr argument if passed there
+  weight_decay: 1e-5
+  label_smooth: 0.0
+
+lr_scheduler:
+  _name: ?? # Keep as is, or define a specific scheduler if needed
+  warmup_updates: ?? # Keep as is
+
+model:
+  _name: BaseModel # This name corresponds to your BaseModel class in model.py

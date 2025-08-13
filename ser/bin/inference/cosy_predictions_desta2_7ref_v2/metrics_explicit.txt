@@ -1,0 +1,82 @@
+=== Emotion Prediction Analysis Metrics ===
+
+*** TRUE EMOTION vs PREDICTED EMOTION ***
+Overall Accuracy: 0.2692 (26.92%)
+F1 Macro Score: 0.1053
+
+=== Confusion Matrix ===
+Rows: True Emotion (from filename)
+Columns: Predicted Emotion
+
+True\Predicted	anger	angry	annoyed	frustrated	frustration	happiness	happy	joy	neutral	sad	sadness
+anger		0	0	0	0	0	0	0	0	0	0	0
+angry		4	9	0	0	0	2	9	0	0	12	3
+annoyed		0	0	0	0	0	0	0	0	0	0	0
+frustrated		0	0	0	0	0	0	0	0	0	0	0
+frustration		0	0	0	0	0	0	0	0	0	0	0
+happiness		0	0	0	0	0	0	0	0	0	0	0
+happy		1	11	1	0	0	3	9	0	1	12	1
+joy		0	0	0	0	0	0	0	0	0	0	0
+neutral		2	7	0	0	1	2	7	1	8	10	1
+sad		1	8	0	1	0	0	7	0	5	16	1
+sadness		0	0	0	0	0	0	0	0	0	0	0
+
+=== Detailed Classification Report ===
+              precision    recall  f1-score   support
+
+       anger       0.00      0.00      0.00         0
+       angry       0.26      0.23      0.24        39
+     annoyed       0.00      0.00      0.00         0
+  frustrated       0.00      0.00      0.00         0
+ frustration       0.00      0.00      0.00         0
+   happiness       0.00      0.00      0.00         0
+       happy       0.28      0.23      0.25        39
+         joy       0.00      0.00      0.00         0
+     neutral       0.57      0.21      0.30        39
+         sad       0.32      0.41      0.36        39
+     sadness       0.00      0.00      0.00         0
+
+    accuracy                           0.27       156
+   macro avg       0.13      0.10      0.11       156
+weighted avg       0.36      0.27      0.29       156
+
+
+*** PROXY EMOTION vs PREDICTED EMOTION ***
+Overall Accuracy: 0.7244 (72.44%)
+F1 Macro Score: 0.2244
+
+=== Confusion Matrix ===
+Rows: Proxy Emotion (from filename)
+Columns: Predicted Emotion
+
+Proxy\Predicted	anger	angry	annoyed	frustrated	frustration	happiness	happy	joy	neutral	sad	sadness
+anger		0	0	0	0	0	0	0	0	0	0	0
+angry		8	35	1	1	1	1	0	0	3	2	0
+annoyed		0	0	0	0	0	0	0	0	0	0	0
+frustrated		0	0	0	0	0	0	0	0	0	0	0
+frustration		0	0	0	0	0	0	0	0	0	0	0
+happiness		0	0	0	0	0	0	0	0	0	0	0
+happy		0	0	0	0	0	6	32	1	9	2	2
+joy		0	0	0	0	0	0	0	0	0	0	0
+neutral		0	0	0	0	0	0	0	0	0	0	0
+sad		0	0	0	0	0	0	0	0	2	46	4
+sadness		0	0	0	0	0	0	0	0	0	0	0
+
+=== Detailed Classification Report ===
+              precision    recall  f1-score   support
+
+       anger       0.00      0.00      0.00         0
+       angry       1.00      0.67      0.80        52
+     annoyed       0.00      0.00      0.00         0
+  frustrated       0.00      0.00      0.00         0
+ frustration       0.00      0.00      0.00         0
+   happiness       0.00      0.00      0.00         0
+       happy       1.00      0.62      0.76        52
+         joy       0.00      0.00      0.00         0
+     neutral       0.00      0.00      0.00         0
+         sad       0.92      0.88      0.90        52
+     sadness       0.00      0.00      0.00         0
+
+    accuracy                           0.72       156
+   macro avg       0.27      0.20      0.22       156
+weighted avg       0.97      0.72      0.82       156

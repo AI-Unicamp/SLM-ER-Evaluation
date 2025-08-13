@@ -1,0 +1,106 @@
+=== Emotion Prediction Analysis Metrics ===
+
+*** TRUE EMOTION vs PREDICTED EMOTION ***
+Overall Accuracy: 0.1603 (16.03%)
+F1 Macro Score: 0.0488
+
+=== Confusion Matrix ===
+Rows: True Emotion (from filename)
+Columns: Predicted Emotion
+
+True\Predicted	amused	anger	angry	anguish	delighted	disappointment	excitement	frustrated	happiness	happy	joyful	melancholic	neutral	nostalgic	sad	sadness	surprised
+amused		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+anger		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+angry		0	14	1	2	1	1	3	1	5	2	0	1	0	1	3	4	0
+anguish		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+delighted		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+disappointment		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+excitement		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+frustrated		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+happiness		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+happy		0	12	1	0	0	0	1	1	2	5	1	0	3	1	8	3	1
+joyful		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+melancholic		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+neutral		1	12	1	0	0	0	1	0	2	3	0	0	7	1	9	2	0
+nostalgic		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+sad		0	11	2	0	0	0	1	0	2	1	0	0	8	0	12	2	0
+sadness		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+surprised		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+
+=== Detailed Classification Report ===
+                precision    recall  f1-score   support
+
+        amused       0.00      0.00      0.00         0
+         anger       0.00      0.00      0.00         0
+         angry       0.20      0.03      0.05        39
+       anguish       0.00      0.00      0.00         0
+     delighted       0.00      0.00      0.00         0
+disappointment       0.00      0.00      0.00         0
+    excitement       0.00      0.00      0.00         0
+    frustrated       0.00      0.00      0.00         0
+     happiness       0.00      0.00      0.00         0
+         happy       0.45      0.13      0.20        39
+        joyful       0.00      0.00      0.00         0
+   melancholic       0.00      0.00      0.00         0
+       neutral       0.39      0.18      0.25        39
+     nostalgic       0.00      0.00      0.00         0
+           sad       0.38      0.31      0.34        39
+       sadness       0.00      0.00      0.00         0
+     surprised       0.00      0.00      0.00         0
+
+      accuracy                           0.16       156
+     macro avg       0.08      0.04      0.05       156
+  weighted avg       0.35      0.16      0.21       156
+
+
+*** PROXY EMOTION vs PREDICTED EMOTION ***
+Overall Accuracy: 0.2821 (28.21%)
+F1 Macro Score: 0.0701
+
+=== Confusion Matrix ===
+Rows: Proxy Emotion (from filename)
+Columns: Predicted Emotion
+
+Proxy\Predicted	amused	anger	angry	anguish	delighted	disappointment	excitement	frustrated	happiness	happy	joyful	melancholic	neutral	nostalgic	sad	sadness	surprised
+amused		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+anger		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+angry		0	41	5	0	0	0	0	2	0	0	0	0	2	0	1	1	0
+anguish		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+delighted		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+disappointment		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+excitement		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+frustrated		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+happiness		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+happy		1	4	0	0	1	0	6	0	11	11	1	0	13	0	3	0	1
+joyful		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+melancholic		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+neutral		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+nostalgic		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+sad		0	4	0	2	0	1	0	0	0	0	0	1	3	3	28	10	0
+sadness		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+surprised		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+
+=== Detailed Classification Report ===
+                precision    recall  f1-score   support
+
+        amused       0.00      0.00      0.00         0
+         anger       0.00      0.00      0.00         0
+         angry       1.00      0.10      0.18        52
+       anguish       0.00      0.00      0.00         0
+     delighted       0.00      0.00      0.00         0
+disappointment       0.00      0.00      0.00         0
+    excitement       0.00      0.00      0.00         0
+    frustrated       0.00      0.00      0.00         0
+     happiness       0.00      0.00      0.00         0
+         happy       1.00      0.21      0.35        52
+        joyful       0.00      0.00      0.00         0
+   melancholic       0.00      0.00      0.00         0
+       neutral       0.00      0.00      0.00         0
+     nostalgic       0.00      0.00      0.00         0
+           sad       0.88      0.54      0.67        52
+       sadness       0.00      0.00      0.00         0
+     surprised       0.00      0.00      0.00         0
+
+      accuracy                           0.28       156
+     macro avg       0.17      0.05      0.07       156
+  weighted avg       0.96      0.28      0.40       156

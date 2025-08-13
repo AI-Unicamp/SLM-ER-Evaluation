@@ -1,0 +1,134 @@
+=== Emotion Prediction Analysis Metrics ===
+
+*** TRUE EMOTION vs PREDICTED EMOTION ***
+Overall Accuracy: 0.2188 (21.88%)
+F1 Macro Score: 0.0411
+
+=== Confusion Matrix ===
+Rows: True Emotion (from filename)
+Columns: Predicted Emotion
+
+True\Predicted	angry	happy	neutral	sad	the audio conveys a happy emotion.	the audio conveys a happy mood.	the audio conveys a neutral emotion.	the audio conveys a sad emotion.	the audio conveys an angry emotion.	the audio conveys an angry mood.	the audio conveys happiness.	the audio conveys sadness.	the emotion conveyed by the audio is happy.	the emotion conveyed by the audio is neutral.	the emotion conveyed by the audio is sad.	the emotion conveyed by the audio is sadness.	the emotion conveyed in the audio is anger.	the emotion conveyed in the audio is neutral.	the emotion conveyed in the audio is quiet or subdued.	the emotion conveyed in the audio is quiet.	the emotion conveyed in the audio is sad.	the emotion conveyed in the audio is sadness.	the song conveys sadness.	the speaker sounds happy.
+angry		35	24	10	11	1	1	3	3	0	0	0	4	1	2	1	1	2	3	0	1	1	0	0	0
+happy		21	23	18	16	2	0	4	0	0	1	0	1	1	3	1	1	2	4	0	0	2	2	1	1
+neutral		19	23	18	15	1	0	5	4	1	1	1	2	0	2	1	1	3	4	0	1	1	1	0	0
+sad		18	23	21	15	1	0	3	3	0	1	1	2	0	3	1	1	3	5	1	0	1	1	0	0
+the audio conveys a happy emotion.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the audio conveys a happy mood.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the audio conveys a neutral emotion.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the audio conveys a sad emotion.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the audio conveys an angry emotion.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the audio conveys an angry mood.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the audio conveys happiness.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the audio conveys sadness.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the emotion conveyed by the audio is happy.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the emotion conveyed by the audio is neutral.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the emotion conveyed by the audio is sad.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the emotion conveyed by the audio is sadness.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the emotion conveyed in the audio is anger.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the emotion conveyed in the audio is neutral.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the emotion conveyed in the audio is quiet or subdued.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the emotion conveyed in the audio is quiet.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the emotion conveyed in the audio is sad.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the emotion conveyed in the audio is sadness.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the song conveys sadness.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the speaker sounds happy.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+
+=== Detailed Classification Report ===
+                                                        precision    recall  f1-score   support
+
+                                                 angry       0.38      0.34      0.36       104
+                                                 happy       0.25      0.22      0.23       104
+                                               neutral       0.27      0.17      0.21       104
+                                                   sad       0.26      0.14      0.19       104
+                    the audio conveys a happy emotion.       0.00      0.00      0.00         0
+                       the audio conveys a happy mood.       0.00      0.00      0.00         0
+                  the audio conveys a neutral emotion.       0.00      0.00      0.00         0
+                      the audio conveys a sad emotion.       0.00      0.00      0.00         0
+                   the audio conveys an angry emotion.       0.00      0.00      0.00         0
+                      the audio conveys an angry mood.       0.00      0.00      0.00         0
+                          the audio conveys happiness.       0.00      0.00      0.00         0
+                            the audio conveys sadness.       0.00      0.00      0.00         0
+           the emotion conveyed by the audio is happy.       0.00      0.00      0.00         0
+         the emotion conveyed by the audio is neutral.       0.00      0.00      0.00         0
+             the emotion conveyed by the audio is sad.       0.00      0.00      0.00         0
+         the emotion conveyed by the audio is sadness.       0.00      0.00      0.00         0
+           the emotion conveyed in the audio is anger.       0.00      0.00      0.00         0
+         the emotion conveyed in the audio is neutral.       0.00      0.00      0.00         0
+the emotion conveyed in the audio is quiet or subdued.       0.00      0.00      0.00         0
+           the emotion conveyed in the audio is quiet.       0.00      0.00      0.00         0
+             the emotion conveyed in the audio is sad.       0.00      0.00      0.00         0
+         the emotion conveyed in the audio is sadness.       0.00      0.00      0.00         0
+                             the song conveys sadness.       0.00      0.00      0.00         0
+                             the speaker sounds happy.       0.00      0.00      0.00         0
+
+                                              accuracy                           0.22       416
+                                             macro avg       0.05      0.04      0.04       416
+                                          weighted avg       0.29      0.22      0.25       416
+
+
+*** PROXY EMOTION vs PREDICTED EMOTION ***
+Overall Accuracy: 0.6875 (68.75%)
+F1 Macro Score: 0.1298
+
+=== Confusion Matrix ===
+Rows: Proxy Emotion (from filename)
+Columns: Predicted Emotion
+
+Proxy\Predicted	angry	happy	neutral	sad	the audio conveys a happy emotion.	the audio conveys a happy mood.	the audio conveys a neutral emotion.	the audio conveys a sad emotion.	the audio conveys an angry emotion.	the audio conveys an angry mood.	the audio conveys happiness.	the audio conveys sadness.	the emotion conveyed by the audio is happy.	the emotion conveyed by the audio is neutral.	the emotion conveyed by the audio is sad.	the emotion conveyed by the audio is sadness.	the emotion conveyed in the audio is anger.	the emotion conveyed in the audio is neutral.	the emotion conveyed in the audio is quiet or subdued.	the emotion conveyed in the audio is quiet.	the emotion conveyed in the audio is sad.	the emotion conveyed in the audio is sadness.	the song conveys sadness.	the speaker sounds happy.
+angry		81	0	6	2	0	0	0	0	1	3	0	0	0	0	0	0	10	1	0	0	0	0	0	0
+happy		1	93	0	1	3	1	0	0	0	0	2	0	2	0	0	0	0	0	0	0	0	0	0	1
+neutral		9	0	58	0	1	0	14	0	0	0	0	0	0	6	0	0	0	13	1	2	0	0	0	0
+sad		2	0	3	54	1	0	1	10	0	0	0	9	0	4	4	4	0	2	0	0	5	4	1	0
+the audio conveys a happy emotion.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the audio conveys a happy mood.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the audio conveys a neutral emotion.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the audio conveys a sad emotion.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the audio conveys an angry emotion.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the audio conveys an angry mood.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the audio conveys happiness.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the audio conveys sadness.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the emotion conveyed by the audio is happy.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the emotion conveyed by the audio is neutral.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the emotion conveyed by the audio is sad.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the emotion conveyed by the audio is sadness.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the emotion conveyed in the audio is anger.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the emotion conveyed in the audio is neutral.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the emotion conveyed in the audio is quiet or subdued.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the emotion conveyed in the audio is quiet.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the emotion conveyed in the audio is sad.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the emotion conveyed in the audio is sadness.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the song conveys sadness.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the speaker sounds happy.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+
+=== Detailed Classification Report ===
+                                                        precision    recall  f1-score   support
+
+                                                 angry       0.87      0.78      0.82       104
+                                                 happy       1.00      0.89      0.94       104
+                                               neutral       0.87      0.56      0.68       104
+                                                   sad       0.95      0.52      0.67       104
+                    the audio conveys a happy emotion.       0.00      0.00      0.00         0
+                       the audio conveys a happy mood.       0.00      0.00      0.00         0
+                  the audio conveys a neutral emotion.       0.00      0.00      0.00         0
+                      the audio conveys a sad emotion.       0.00      0.00      0.00         0
+                   the audio conveys an angry emotion.       0.00      0.00      0.00         0
+                      the audio conveys an angry mood.       0.00      0.00      0.00         0
+                          the audio conveys happiness.       0.00      0.00      0.00         0
+                            the audio conveys sadness.       0.00      0.00      0.00         0
+           the emotion conveyed by the audio is happy.       0.00      0.00      0.00         0
+         the emotion conveyed by the audio is neutral.       0.00      0.00      0.00         0
+             the emotion conveyed by the audio is sad.       0.00      0.00      0.00         0
+         the emotion conveyed by the audio is sadness.       0.00      0.00      0.00         0
+           the emotion conveyed in the audio is anger.       0.00      0.00      0.00         0
+         the emotion conveyed in the audio is neutral.       0.00      0.00      0.00         0
+the emotion conveyed in the audio is quiet or subdued.       0.00      0.00      0.00         0
+           the emotion conveyed in the audio is quiet.       0.00      0.00      0.00         0
+             the emotion conveyed in the audio is sad.       0.00      0.00      0.00         0
+         the emotion conveyed in the audio is sadness.       0.00      0.00      0.00         0
+                             the song conveys sadness.       0.00      0.00      0.00         0
+                             the speaker sounds happy.       0.00      0.00      0.00         0
+
+                                              accuracy                           0.69       416
+                                             macro avg       0.15      0.11      0.13       416
+                                          weighted avg       0.92      0.69      0.78       416

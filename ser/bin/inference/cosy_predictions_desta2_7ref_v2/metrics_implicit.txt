@@ -1,0 +1,110 @@
+=== Emotion Prediction Analysis Metrics ===
+
+*** TRUE EMOTION vs PREDICTED EMOTION ***
+Overall Accuracy: 0.2115 (21.15%)
+F1 Macro Score: 0.0566
+
+=== Confusion Matrix ===
+Rows: True Emotion (from filename)
+Columns: Predicted Emotion
+
+True\Predicted	amusement	anger	angry	boredom	cheerful	despair	disappointment	excitement	frustrated	happiness	happy	indifferent	joyful	melancholy	neutral	nostalgic	sad	sadness
+amusement		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+anger		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+angry		1	12	0	1	0	2	0	2	0	5	1	0	0	0	5	1	4	5
+boredom		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+cheerful		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+despair		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+disappointment		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+excitement		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+frustrated		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+happiness		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+happy		0	8	1	0	1	1	1	1	1	2	5	1	1	1	7	1	5	2
+indifferent		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+joyful		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+melancholy		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+neutral		0	11	0	0	0	0	0	1	0	2	3	0	0	0	13	1	5	3
+nostalgic		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+sad		0	6	2	0	0	0	0	0	0	5	2	0	0	0	5	0	15	4
+sadness		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+
+=== Detailed Classification Report ===
+                precision    recall  f1-score   support
+
+     amusement       0.00      0.00      0.00         0
+         anger       0.00      0.00      0.00         0
+         angry       0.00      0.00      0.00        39
+       boredom       0.00      0.00      0.00         0
+      cheerful       0.00      0.00      0.00         0
+       despair       0.00      0.00      0.00         0
+disappointment       0.00      0.00      0.00         0
+    excitement       0.00      0.00      0.00         0
+    frustrated       0.00      0.00      0.00         0
+     happiness       0.00      0.00      0.00         0
+         happy       0.45      0.13      0.20        39
+   indifferent       0.00      0.00      0.00         0
+        joyful       0.00      0.00      0.00         0
+    melancholy       0.00      0.00      0.00         0
+       neutral       0.43      0.33      0.38        39
+     nostalgic       0.00      0.00      0.00         0
+           sad       0.52      0.38      0.44        39
+       sadness       0.00      0.00      0.00         0
+
+      accuracy                           0.21       156
+     macro avg       0.08      0.05      0.06       156
+  weighted avg       0.35      0.21      0.25       156
+
+
+*** PROXY EMOTION vs PREDICTED EMOTION ***
+Overall Accuracy: 0.2051 (20.51%)
+F1 Macro Score: 0.0498
+
+=== Confusion Matrix ===
+Rows: Proxy Emotion (from filename)
+Columns: Predicted Emotion
+
+Proxy\Predicted	amusement	anger	angry	boredom	cheerful	despair	disappointment	excitement	frustrated	happiness	happy	indifferent	joyful	melancholy	neutral	nostalgic	sad	sadness
+amusement		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+anger		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+angry		0	36	3	0	0	0	0	0	1	0	0	1	0	0	5	0	4	2
+boredom		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+cheerful		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+despair		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+disappointment		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+excitement		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+frustrated		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+happiness		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+happy		1	0	0	0	0	0	0	4	0	14	10	0	1	0	16	0	6	0
+indifferent		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+joyful		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+melancholy		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+neutral		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+nostalgic		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+sad		0	1	0	1	1	3	1	0	0	0	1	0	0	1	9	3	19	12
+sadness		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+
+=== Detailed Classification Report ===
+                precision    recall  f1-score   support
+
+     amusement       0.00      0.00      0.00         0
+         anger       0.00      0.00      0.00         0
+         angry       1.00      0.06      0.11        52
+       boredom       0.00      0.00      0.00         0
+      cheerful       0.00      0.00      0.00         0
+       despair       0.00      0.00      0.00         0
+disappointment       0.00      0.00      0.00         0
+    excitement       0.00      0.00      0.00         0
+    frustrated       0.00      0.00      0.00         0
+     happiness       0.00      0.00      0.00         0
+         happy       0.91      0.19      0.32        52
+   indifferent       0.00      0.00      0.00         0
+        joyful       0.00      0.00      0.00         0
+    melancholy       0.00      0.00      0.00         0
+       neutral       0.00      0.00      0.00         0
+     nostalgic       0.00      0.00      0.00         0
+           sad       0.66      0.37      0.47        52
+       sadness       0.00      0.00      0.00         0
+
+      accuracy                           0.21       156
+     macro avg       0.14      0.03      0.05       156
+  weighted avg       0.85      0.21      0.30       156
