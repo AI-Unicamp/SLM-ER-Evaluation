@@ -1,0 +1,126 @@
+=== Emotion Prediction Analysis Metrics ===
+
+*** TRUE EMOTION vs PREDICTED EMOTION ***
+Overall Accuracy: 0.2372 (23.72%)
+F1 Macro Score: 0.0381
+
+=== Confusion Matrix ===
+Rows: True Emotion (from filename)
+Columns: Predicted Emotion
+
+True\Predicted	angry	despondent	disgusted	disheartened	dull	festive	frustrated	happy	heavy	hugger	joyful	muttered	neutral	overwhelmed	resentful	resigned	sad	sleepy	the speaker cried out silently.	the speaker felt 'amused' or 'cheerful'.	the speaker felt disgusted.	the speaker sounds happy.
+angry		25	0	2	0	0	0	0	6	1	0	1	1	0	1	1	0	1	0	0	0	0	0
+despondent		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+disgusted		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+disheartened		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+dull		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+festive		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+frustrated		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+happy		23	0	2	0	0	0	0	6	0	0	1	1	0	0	0	0	5	0	0	1	0	0
+heavy		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+hugger		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+joyful		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+muttered		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+neutral		16	0	1	0	1	1	1	7	0	0	1	1	1	0	0	1	5	2	0	0	1	0
+overwhelmed		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+resentful		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+resigned		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+sad		14	1	2	1	0	0	0	9	0	1	1	1	0	0	1	0	5	1	1	0	0	1
+sleepy		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the speaker cried out silently.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the speaker felt 'amused' or 'cheerful'.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the speaker felt disgusted.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the speaker sounds happy.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+
+=== Detailed Classification Report ===
+                                          precision    recall  f1-score   support
+
+                                   angry       0.32      0.64      0.43        39
+                              despondent       0.00      0.00      0.00         0
+                               disgusted       0.00      0.00      0.00         0
+                            disheartened       0.00      0.00      0.00         0
+                                    dull       0.00      0.00      0.00         0
+                                 festive       0.00      0.00      0.00         0
+                              frustrated       0.00      0.00      0.00         0
+                                   happy       0.21      0.15      0.18        39
+                                   heavy       0.00      0.00      0.00         0
+                                  hugger       0.00      0.00      0.00         0
+                                  joyful       0.00      0.00      0.00         0
+                                muttered       0.00      0.00      0.00         0
+                                 neutral       1.00      0.03      0.05        39
+                             overwhelmed       0.00      0.00      0.00         0
+                               resentful       0.00      0.00      0.00         0
+                                resigned       0.00      0.00      0.00         0
+                                     sad       0.31      0.13      0.18        39
+                                  sleepy       0.00      0.00      0.00         0
+         the speaker cried out silently.       0.00      0.00      0.00         0
+the speaker felt 'amused' or 'cheerful'.       0.00      0.00      0.00         0
+             the speaker felt disgusted.       0.00      0.00      0.00         0
+               the speaker sounds happy.       0.00      0.00      0.00         0
+
+                                accuracy                           0.24       156
+                               macro avg       0.08      0.04      0.04       156
+                            weighted avg       0.46      0.24      0.21       156
+
+
+*** PROXY EMOTION vs PREDICTED EMOTION ***
+Overall Accuracy: 0.5705 (57.05%)
+F1 Macro Score: 0.0834
+
+=== Confusion Matrix ===
+Rows: Proxy Emotion (from filename)
+Columns: Predicted Emotion
+
+Proxy\Predicted	angry	despondent	disgusted	disheartened	dull	festive	frustrated	happy	heavy	hugger	joyful	muttered	neutral	overwhelmed	resentful	resigned	sad	sleepy	the speaker cried out silently.	the speaker felt 'amused' or 'cheerful'.	the speaker felt disgusted.	the speaker sounds happy.
+angry		47	0	1	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0
+despondent		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+disgusted		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+disheartened		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+dull		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+festive		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+frustrated		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+happy		12	0	0	0	0	1	0	28	0	1	4	0	0	1	0	0	2	0	0	1	1	1
+heavy		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+hugger		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+joyful		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+muttered		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+neutral		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+overwhelmed		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+resentful		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+resigned		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+sad		19	1	6	1	1	0	1	0	1	0	0	0	1	0	2	1	14	3	1	0	0	0
+sleepy		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the speaker cried out silently.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the speaker felt 'amused' or 'cheerful'.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the speaker felt disgusted.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the speaker sounds happy.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+
+=== Detailed Classification Report ===
+                                          precision    recall  f1-score   support
+
+                                   angry       0.60      0.90      0.72        52
+                              despondent       0.00      0.00      0.00         0
+                               disgusted       0.00      0.00      0.00         0
+                            disheartened       0.00      0.00      0.00         0
+                                    dull       0.00      0.00      0.00         0
+                                 festive       0.00      0.00      0.00         0
+                              frustrated       0.00      0.00      0.00         0
+                                   happy       1.00      0.54      0.70        52
+                                   heavy       0.00      0.00      0.00         0
+                                  hugger       0.00      0.00      0.00         0
+                                  joyful       0.00      0.00      0.00         0
+                                muttered       0.00      0.00      0.00         0
+                                 neutral       0.00      0.00      0.00         0
+                             overwhelmed       0.00      0.00      0.00         0
+                               resentful       0.00      0.00      0.00         0
+                                resigned       0.00      0.00      0.00         0
+                                     sad       0.88      0.27      0.41        52
+                                  sleepy       0.00      0.00      0.00         0
+         the speaker cried out silently.       0.00      0.00      0.00         0
+the speaker felt 'amused' or 'cheerful'.       0.00      0.00      0.00         0
+             the speaker felt disgusted.       0.00      0.00      0.00         0
+               the speaker sounds happy.       0.00      0.00      0.00         0
+
+                                accuracy                           0.57       156
+                               macro avg       0.11      0.08      0.08       156
+                            weighted avg       0.83      0.57      0.61       156

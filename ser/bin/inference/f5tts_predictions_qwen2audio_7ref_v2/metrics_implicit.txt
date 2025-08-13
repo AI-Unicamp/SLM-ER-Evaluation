@@ -1,0 +1,106 @@
+=== Emotion Prediction Analysis Metrics ===
+
+*** TRUE EMOTION vs PREDICTED EMOTION ***
+Overall Accuracy: 0.2500 (25.00%)
+F1 Macro Score: 0.0583
+
+=== Confusion Matrix ===
+Rows: True Emotion (from filename)
+Columns: Predicted Emotion
+
+True\Predicted	angry	disgusted	dull	emptiness	happy	heavy	joyful	muttering	neutral	red	sad	satisfied	shocked	sleepy	tense	the speaker felt 'blushful'.	the speaker felt 'pleased' or 'content'.
+angry		20	2	1	0	7	0	1	1	1	0	4	0	1	1	0	0	0
+disgusted		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+dull		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+emptiness		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+happy		17	2	1	0	8	0	1	0	1	0	8	0	0	0	0	0	1
+heavy		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+joyful		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+muttering		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+neutral		13	2	1	1	8	1	1	0	2	1	8	0	0	1	0	0	0
+red		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+sad		10	5	1	1	7	0	1	0	1	0	9	1	0	1	1	1	0
+satisfied		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+shocked		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+sleepy		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+tense		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the speaker felt 'blushful'.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the speaker felt 'pleased' or 'content'.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+
+=== Detailed Classification Report ===
+                                          precision    recall  f1-score   support
+
+                                   angry       0.33      0.51      0.40        39
+                               disgusted       0.00      0.00      0.00         0
+                                    dull       0.00      0.00      0.00         0
+                               emptiness       0.00      0.00      0.00         0
+                                   happy       0.27      0.21      0.23        39
+                                   heavy       0.00      0.00      0.00         0
+                                  joyful       0.00      0.00      0.00         0
+                               muttering       0.00      0.00      0.00         0
+                                 neutral       0.40      0.05      0.09        39
+                                     red       0.00      0.00      0.00         0
+                                     sad       0.31      0.23      0.26        39
+                               satisfied       0.00      0.00      0.00         0
+                                 shocked       0.00      0.00      0.00         0
+                                  sleepy       0.00      0.00      0.00         0
+                                   tense       0.00      0.00      0.00         0
+            the speaker felt 'blushful'.       0.00      0.00      0.00         0
+the speaker felt 'pleased' or 'content'.       0.00      0.00      0.00         0
+
+                                accuracy                           0.25       156
+                               macro avg       0.08      0.06      0.06       156
+                            weighted avg       0.33      0.25      0.25       156
+
+
+*** PROXY EMOTION vs PREDICTED EMOTION ***
+Overall Accuracy: 0.6538 (65.38%)
+F1 Macro Score: 0.1291
+
+=== Confusion Matrix ===
+Rows: Proxy Emotion (from filename)
+Columns: Predicted Emotion
+
+Proxy\Predicted	angry	disgusted	dull	emptiness	happy	heavy	joyful	muttering	neutral	red	sad	satisfied	shocked	sleepy	tense	the speaker felt 'blushful'.	the speaker felt 'pleased' or 'content'.
+angry		46	3	0	0	0	0	0	1	0	1	0	0	0	0	1	0	0
+disgusted		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+dull		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+emptiness		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+happy		5	5	0	0	30	0	4	0	1	0	3	1	1	0	0	1	1
+heavy		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+joyful		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+muttering		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+neutral		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+red		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+sad		9	3	4	2	0	1	0	0	4	0	26	0	0	3	0	0	0
+satisfied		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+shocked		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+sleepy		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+tense		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the speaker felt 'blushful'.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the speaker felt 'pleased' or 'content'.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+
+=== Detailed Classification Report ===
+                                          precision    recall  f1-score   support
+
+                                   angry       0.77      0.88      0.82        52
+                               disgusted       0.00      0.00      0.00         0
+                                    dull       0.00      0.00      0.00         0
+                               emptiness       0.00      0.00      0.00         0
+                                   happy       1.00      0.58      0.73        52
+                                   heavy       0.00      0.00      0.00         0
+                                  joyful       0.00      0.00      0.00         0
+                               muttering       0.00      0.00      0.00         0
+                                 neutral       0.00      0.00      0.00         0
+                                     red       0.00      0.00      0.00         0
+                                     sad       0.90      0.50      0.64        52
+                               satisfied       0.00      0.00      0.00         0
+                                 shocked       0.00      0.00      0.00         0
+                                  sleepy       0.00      0.00      0.00         0
+                                   tense       0.00      0.00      0.00         0
+            the speaker felt 'blushful'.       0.00      0.00      0.00         0
+the speaker felt 'pleased' or 'content'.       0.00      0.00      0.00         0
+
+                                accuracy                           0.65       156
+                               macro avg       0.16      0.12      0.13       156
+                            weighted avg       0.89      0.65      0.73       156

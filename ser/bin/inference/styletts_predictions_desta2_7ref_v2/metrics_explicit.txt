@@ -1,0 +1,94 @@
+=== Emotion Prediction Analysis Metrics ===
+
+*** TRUE EMOTION vs PREDICTED EMOTION ***
+Overall Accuracy: 0.2372 (23.72%)
+F1 Macro Score: 0.0682
+
+=== Confusion Matrix ===
+Rows: True Emotion (from filename)
+Columns: Predicted Emotion
+
+True\Predicted	anger	angry	excitement	frustration	happiness	happy	joy	joyful	neutral	nostalgic	relieved	sad	sadness	shouting
+anger		0	0	0	0	0	0	0	0	0	0	0	0	0	0
+angry		3	10	1	0	2	8	1	0	0	1	0	12	1	0
+excitement		0	0	0	0	0	0	0	0	0	0	0	0	0	0
+frustration		0	0	0	0	0	0	0	0	0	0	0	0	0	0
+happiness		0	0	0	0	0	0	0	0	0	0	0	0	0	0
+happy		1	11	0	1	1	7	1	1	0	1	1	12	1	1
+joy		0	0	0	0	0	0	0	0	0	0	0	0	0	0
+joyful		0	0	0	0	0	0	0	0	0	0	0	0	0	0
+neutral		1	12	0	0	0	8	0	0	3	1	0	13	1	0
+nostalgic		0	0	0	0	0	0	0	0	0	0	0	0	0	0
+relieved		0	0	0	0	0	0	0	0	0	0	0	0	0	0
+sad		1	9	0	0	1	4	0	0	4	1	0	17	2	0
+sadness		0	0	0	0	0	0	0	0	0	0	0	0	0	0
+shouting		0	0	0	0	0	0	0	0	0	0	0	0	0	0
+
+=== Detailed Classification Report ===
+              precision    recall  f1-score   support
+
+       anger       0.00      0.00      0.00         0
+       angry       0.24      0.26      0.25        39
+  excitement       0.00      0.00      0.00         0
+ frustration       0.00      0.00      0.00         0
+   happiness       0.00      0.00      0.00         0
+       happy       0.26      0.18      0.21        39
+         joy       0.00      0.00      0.00         0
+      joyful       0.00      0.00      0.00         0
+     neutral       0.43      0.08      0.13        39
+   nostalgic       0.00      0.00      0.00         0
+    relieved       0.00      0.00      0.00         0
+         sad       0.31      0.44      0.37        39
+     sadness       0.00      0.00      0.00         0
+    shouting       0.00      0.00      0.00         0
+
+    accuracy                           0.24       156
+   macro avg       0.09      0.07      0.07       156
+weighted avg       0.31      0.24      0.24       156
+
+
+*** PROXY EMOTION vs PREDICTED EMOTION ***
+Overall Accuracy: 0.7500 (75.00%)
+F1 Macro Score: 0.1773
+
+=== Confusion Matrix ===
+Rows: Proxy Emotion (from filename)
+Columns: Predicted Emotion
+
+Proxy\Predicted	anger	angry	excitement	frustration	happiness	happy	joy	joyful	neutral	nostalgic	relieved	sad	sadness	shouting
+anger		0	0	0	0	0	0	0	0	0	0	0	0	0	0
+angry		6	42	0	1	0	0	0	0	1	0	0	2	0	0
+excitement		0	0	0	0	0	0	0	0	0	0	0	0	0	0
+frustration		0	0	0	0	0	0	0	0	0	0	0	0	0	0
+happiness		0	0	0	0	0	0	0	0	0	0	0	0	0	0
+happy		0	0	1	0	4	27	2	1	6	4	1	4	1	1
+joy		0	0	0	0	0	0	0	0	0	0	0	0	0	0
+joyful		0	0	0	0	0	0	0	0	0	0	0	0	0	0
+neutral		0	0	0	0	0	0	0	0	0	0	0	0	0	0
+nostalgic		0	0	0	0	0	0	0	0	0	0	0	0	0	0
+relieved		0	0	0	0	0	0	0	0	0	0	0	0	0	0
+sad		0	0	0	0	0	0	0	0	0	0	0	48	4	0
+sadness		0	0	0	0	0	0	0	0	0	0	0	0	0	0
+shouting		0	0	0	0	0	0	0	0	0	0	0	0	0	0
+
+=== Detailed Classification Report ===
+              precision    recall  f1-score   support
+
+       anger       0.00      0.00      0.00         0
+       angry       1.00      0.81      0.89        52
+  excitement       0.00      0.00      0.00         0
+ frustration       0.00      0.00      0.00         0
+   happiness       0.00      0.00      0.00         0
+       happy       1.00      0.52      0.68        52
+         joy       0.00      0.00      0.00         0
+      joyful       0.00      0.00      0.00         0
+     neutral       0.00      0.00      0.00         0
+   nostalgic       0.00      0.00      0.00         0
+    relieved       0.00      0.00      0.00         0
+         sad       0.89      0.92      0.91        52
+     sadness       0.00      0.00      0.00         0
+    shouting       0.00      0.00      0.00         0
+
+    accuracy                           0.75       156
+   macro avg       0.21      0.16      0.18       156
+weighted avg       0.96      0.75      0.83       156

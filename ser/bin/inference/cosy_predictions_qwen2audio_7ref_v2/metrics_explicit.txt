@@ -1,0 +1,62 @@
+=== Emotion Prediction Analysis Metrics ===
+
+*** TRUE EMOTION vs PREDICTED EMOTION ***
+Overall Accuracy: 0.3013 (30.13%)
+F1 Macro Score: 0.1936
+
+=== Confusion Matrix ===
+Rows: True Emotion (from filename)
+Columns: Predicted Emotion
+
+True\Predicted	angry	disgusted	festive	happy	neutral	sad
+angry		17	0	0	8	3	11
+disgusted		0	0	0	0	0	0
+festive		0	0	0	0	0	0
+happy		13	0	0	12	1	13
+neutral		15	1	1	7	4	11
+sad		10	2	0	6	7	14
+
+=== Detailed Classification Report ===
+              precision    recall  f1-score   support
+
+       angry       0.31      0.44      0.36        39
+   disgusted       0.00      0.00      0.00         0
+     festive       0.00      0.00      0.00         0
+       happy       0.36      0.31      0.33        39
+     neutral       0.27      0.10      0.15        39
+         sad       0.29      0.36      0.32        39
+
+    accuracy                           0.30       156
+   macro avg       0.20      0.20      0.19       156
+weighted avg       0.31      0.30      0.29       156
+
+
+*** PROXY EMOTION vs PREDICTED EMOTION ***
+Overall Accuracy: 0.8205 (82.05%)
+F1 Macro Score: 0.4341
+
+=== Confusion Matrix ===
+Rows: Proxy Emotion (from filename)
+Columns: Predicted Emotion
+
+Proxy\Predicted	angry	disgusted	festive	happy	neutral	sad
+angry		48	1	0	0	3	0
+disgusted		0	0	0	0	0	0
+festive		0	0	0	0	0	0
+happy		6	2	1	33	8	2
+neutral		0	0	0	0	0	0
+sad		1	0	0	0	4	47
+
+=== Detailed Classification Report ===
+              precision    recall  f1-score   support
+
+       angry       0.87      0.92      0.90        52
+   disgusted       0.00      0.00      0.00         0
+     festive       0.00      0.00      0.00         0
+       happy       1.00      0.63      0.78        52
+     neutral       0.00      0.00      0.00         0
+         sad       0.96      0.90      0.93        52
+
+    accuracy                           0.82       156
+   macro avg       0.47      0.41      0.43       156
+weighted avg       0.94      0.82      0.87       156

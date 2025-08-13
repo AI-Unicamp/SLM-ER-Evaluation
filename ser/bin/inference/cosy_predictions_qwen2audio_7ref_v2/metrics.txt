@@ -1,0 +1,126 @@
+=== Emotion Prediction Analysis Metrics ===
+
+*** TRUE EMOTION vs PREDICTED EMOTION ***
+Overall Accuracy: 0.2716 (27.16%)
+F1 Macro Score: 0.0499
+
+=== Confusion Matrix ===
+Rows: True Emotion (from filename)
+Columns: Predicted Emotion
+
+True\Predicted	angry	cheerful	confused	disgusted	displeased	dull	festive	happy	hugger	impatient	joyful	muttered	neutral	overwhelmed	resentful	sad	satisfied	sleepy	startled	the speaker feels 'impressed'.	the speaker sounds surprised.	the speaker's emotion can be described as neutral.
+angry		53	0	0	3	0	0	0	13	1	0	0	0	20	0	0	13	0	1	0	0	0	0
+cheerful		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+confused		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+disgusted		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+displeased		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+dull		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+festive		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+happy		40	1	1	5	0	1	0	16	0	1	1	1	15	1	1	16	1	0	1	1	0	1
+hugger		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+impatient		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+joyful		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+muttered		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+neutral		34	0	0	10	1	0	1	13	0	0	1	0	24	0	0	20	0	0	0	0	0	0
+overwhelmed		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+resentful		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+sad		20	0	0	11	0	1	0	13	0	0	1	0	35	0	0	20	0	2	0	0	1	0
+satisfied		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+sleepy		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+startled		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the speaker feels 'impressed'.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the speaker sounds surprised.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the speaker's emotion can be described as neutral.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+
+=== Detailed Classification Report ===
+                                                    precision    recall  f1-score   support
+
+                                             angry       0.36      0.51      0.42       104
+                                          cheerful       0.00      0.00      0.00         0
+                                          confused       0.00      0.00      0.00         0
+                                         disgusted       0.00      0.00      0.00         0
+                                        displeased       0.00      0.00      0.00         0
+                                              dull       0.00      0.00      0.00         0
+                                           festive       0.00      0.00      0.00         0
+                                             happy       0.29      0.15      0.20       104
+                                            hugger       0.00      0.00      0.00         0
+                                         impatient       0.00      0.00      0.00         0
+                                            joyful       0.00      0.00      0.00         0
+                                          muttered       0.00      0.00      0.00         0
+                                           neutral       0.26      0.23      0.24       104
+                                       overwhelmed       0.00      0.00      0.00         0
+                                         resentful       0.00      0.00      0.00         0
+                                               sad       0.29      0.19      0.23       104
+                                         satisfied       0.00      0.00      0.00         0
+                                            sleepy       0.00      0.00      0.00         0
+                                          startled       0.00      0.00      0.00         0
+                    the speaker feels 'impressed'.       0.00      0.00      0.00         0
+                     the speaker sounds surprised.       0.00      0.00      0.00         0
+the speaker's emotion can be described as neutral.       0.00      0.00      0.00         0
+
+                                          accuracy                           0.27       416
+                                         macro avg       0.05      0.05      0.05       416
+                                      weighted avg       0.30      0.27      0.27       416
+
+
+*** PROXY EMOTION vs PREDICTED EMOTION ***
+Overall Accuracy: 0.6635 (66.35%)
+F1 Macro Score: 0.1284
+
+=== Confusion Matrix ===
+Rows: Proxy Emotion (from filename)
+Columns: Predicted Emotion
+
+Proxy\Predicted	angry	cheerful	confused	disgusted	displeased	dull	festive	happy	hugger	impatient	joyful	muttered	neutral	overwhelmed	resentful	sad	satisfied	sleepy	startled	the speaker feels 'impressed'.	the speaker sounds surprised.	the speaker's emotion can be described as neutral.
+angry		91	0	0	7	0	0	0	0	0	0	0	1	5	0	0	0	0	0	0	0	0	0
+cheerful		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+confused		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+disgusted		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+displeased		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+dull		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+festive		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+happy		16	1	0	5	0	0	1	55	1	0	3	0	13	0	1	4	1	0	1	1	1	0
+hugger		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+impatient		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+joyful		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+muttered		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+neutral		24	0	0	11	1	0	0	0	0	1	0	0	65	0	0	0	0	1	0	0	0	1
+overwhelmed		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+resentful		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+sad		16	0	1	6	0	2	0	0	0	0	0	0	11	1	0	65	0	2	0	0	0	0
+satisfied		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+sleepy		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+startled		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the speaker feels 'impressed'.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the speaker sounds surprised.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+the speaker's emotion can be described as neutral.		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+
+=== Detailed Classification Report ===
+                                                    precision    recall  f1-score   support
+
+                                             angry       0.62      0.88      0.73       104
+                                          cheerful       0.00      0.00      0.00         0
+                                          confused       0.00      0.00      0.00         0
+                                         disgusted       0.00      0.00      0.00         0
+                                        displeased       0.00      0.00      0.00         0
+                                              dull       0.00      0.00      0.00         0
+                                           festive       0.00      0.00      0.00         0
+                                             happy       1.00      0.53      0.69       104
+                                            hugger       0.00      0.00      0.00         0
+                                         impatient       0.00      0.00      0.00         0
+                                            joyful       0.00      0.00      0.00         0
+                                          muttered       0.00      0.00      0.00         0
+                                           neutral       0.69      0.62      0.66       104
+                                       overwhelmed       0.00      0.00      0.00         0
+                                         resentful       0.00      0.00      0.00         0
+                                               sad       0.94      0.62      0.75       104
+                                         satisfied       0.00      0.00      0.00         0
+                                            sleepy       0.00      0.00      0.00         0
+                                          startled       0.00      0.00      0.00         0
+                    the speaker feels 'impressed'.       0.00      0.00      0.00         0
+                     the speaker sounds surprised.       0.00      0.00      0.00         0
+the speaker's emotion can be described as neutral.       0.00      0.00      0.00         0
+
+                                          accuracy                           0.66       416
+                                         macro avg       0.15      0.12      0.13       416
+                                      weighted avg       0.81      0.66      0.71       416

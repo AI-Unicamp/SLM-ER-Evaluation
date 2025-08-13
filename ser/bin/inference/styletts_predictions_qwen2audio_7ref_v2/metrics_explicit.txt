@@ -1,0 +1,74 @@
+=== Emotion Prediction Analysis Metrics ===
+
+*** TRUE EMOTION vs PREDICTED EMOTION ***
+Overall Accuracy: 0.2564 (25.64%)
+F1 Macro Score: 0.1029
+
+=== Confusion Matrix ===
+Rows: True Emotion (from filename)
+Columns: Predicted Emotion
+
+True\Predicted	angry	disgusted	festive	happy	joyful	neutral	sad	sadness	the speaker felt nostalgic.
+angry		17	0	0	8	1	0	13	0	0
+disgusted		0	0	0	0	0	0	0	0	0
+festive		0	0	0	0	0	0	0	0	0
+happy		16	0	0	10	1	0	12	0	0
+joyful		0	0	0	0	0	0	0	0	0
+neutral		13	1	0	11	0	1	11	1	1
+sad		14	0	1	10	0	0	12	1	1
+sadness		0	0	0	0	0	0	0	0	0
+the speaker felt nostalgic.		0	0	0	0	0	0	0	0	0
+
+=== Detailed Classification Report ===
+                             precision    recall  f1-score   support
+
+                      angry       0.28      0.44      0.34        39
+                  disgusted       0.00      0.00      0.00         0
+                    festive       0.00      0.00      0.00         0
+                      happy       0.26      0.26      0.26        39
+                     joyful       0.00      0.00      0.00         0
+                    neutral       1.00      0.03      0.05        39
+                        sad       0.25      0.31      0.28        39
+                    sadness       0.00      0.00      0.00         0
+the speaker felt nostalgic.       0.00      0.00      0.00         0
+
+                   accuracy                           0.26       156
+                  macro avg       0.20      0.11      0.10       156
+               weighted avg       0.45      0.26      0.23       156
+
+
+*** PROXY EMOTION vs PREDICTED EMOTION ***
+Overall Accuracy: 0.8910 (89.10%)
+F1 Macro Score: 0.3051
+
+=== Confusion Matrix ===
+Rows: Proxy Emotion (from filename)
+Columns: Predicted Emotion
+
+Proxy\Predicted	angry	disgusted	festive	happy	joyful	neutral	sad	sadness	the speaker felt nostalgic.
+angry		52	0	0	0	0	0	0	0	0
+disgusted		0	0	0	0	0	0	0	0	0
+festive		0	0	0	0	0	0	0	0	0
+happy		7	1	1	39	2	0	0	0	2
+joyful		0	0	0	0	0	0	0	0	0
+neutral		0	0	0	0	0	0	0	0	0
+sad		1	0	0	0	0	1	48	2	0
+sadness		0	0	0	0	0	0	0	0	0
+the speaker felt nostalgic.		0	0	0	0	0	0	0	0	0
+
+=== Detailed Classification Report ===
+                             precision    recall  f1-score   support
+
+                      angry       0.87      1.00      0.93        52
+                  disgusted       0.00      0.00      0.00         0
+                    festive       0.00      0.00      0.00         0
+                      happy       1.00      0.75      0.86        52
+                     joyful       0.00      0.00      0.00         0
+                    neutral       0.00      0.00      0.00         0
+                        sad       1.00      0.92      0.96        52
+                    sadness       0.00      0.00      0.00         0
+the speaker felt nostalgic.       0.00      0.00      0.00         0
+
+                   accuracy                           0.89       156
+                  macro avg       0.32      0.30      0.31       156
+               weighted avg       0.96      0.89      0.92       156
