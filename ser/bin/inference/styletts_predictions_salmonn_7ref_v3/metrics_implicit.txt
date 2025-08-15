@@ -1,0 +1,70 @@
+=== Emotion Prediction Analysis Metrics ===
+
+*** TRUE EMOTION vs PREDICTED EMOTION ***
+Overall Accuracy: 0.1474 (14.74%)
+F1 Macro Score: 0.0564
+
+=== Confusion Matrix ===
+Rows: True Emotion (from filename)
+Columns: Predicted Emotion
+
+True\Predicted	angry	happy	neutral	sad	the audio conveys a feeling of emptiness.	the audio conveys a happy emotion.	the audio conveys a neutral emotion.	the audio conveys a sarcastic emotion.
+angry		0	0	12	0	0	0	27	0
+happy		0	0	10	0	0	0	29	0
+neutral		0	0	23	0	0	1	15	0
+sad		0	0	18	0	1	0	19	1
+the audio conveys a feeling of emptiness.		0	0	0	0	0	0	0	0
+the audio conveys a happy emotion.		0	0	0	0	0	0	0	0
+the audio conveys a neutral emotion.		0	0	0	0	0	0	0	0
+the audio conveys a sarcastic emotion.		0	0	0	0	0	0	0	0
+
+=== Detailed Classification Report ===
+                                           precision    recall  f1-score   support
+
+                                    angry       0.00      0.00      0.00        39
+                                    happy       0.00      0.00      0.00        39
+                                  neutral       0.37      0.59      0.45        39
+                                      sad       0.00      0.00      0.00        39
+the audio conveys a feeling of emptiness.       0.00      0.00      0.00         0
+       the audio conveys a happy emotion.       0.00      0.00      0.00         0
+     the audio conveys a neutral emotion.       0.00      0.00      0.00         0
+   the audio conveys a sarcastic emotion.       0.00      0.00      0.00         0
+
+                                 accuracy                           0.15       156
+                                macro avg       0.05      0.07      0.06       156
+                             weighted avg       0.09      0.15      0.11       156
+
+
+*** PROXY EMOTION vs PREDICTED EMOTION ***
+Overall Accuracy: 0.0000 (0.00%)
+F1 Macro Score: 0.0000
+
+=== Confusion Matrix ===
+Rows: Proxy Emotion (from filename)
+Columns: Predicted Emotion
+
+Proxy\Predicted	angry	happy	neutral	sad	the audio conveys a feeling of emptiness.	the audio conveys a happy emotion.	the audio conveys a neutral emotion.	the audio conveys a sarcastic emotion.
+angry		0	0	19	0	0	0	32	1
+happy		0	0	14	0	0	1	37	0
+neutral		0	0	0	0	0	0	0	0
+sad		0	0	30	0	1	0	21	0
+the audio conveys a feeling of emptiness.		0	0	0	0	0	0	0	0
+the audio conveys a happy emotion.		0	0	0	0	0	0	0	0
+the audio conveys a neutral emotion.		0	0	0	0	0	0	0	0
+the audio conveys a sarcastic emotion.		0	0	0	0	0	0	0	0
+
+=== Detailed Classification Report ===
+                                           precision    recall  f1-score   support
+
+                                    angry       0.00      0.00      0.00      52.0
+                                    happy       0.00      0.00      0.00      52.0
+                                  neutral       0.00      0.00      0.00       0.0
+                                      sad       0.00      0.00      0.00      52.0
+the audio conveys a feeling of emptiness.       0.00      0.00      0.00       0.0
+       the audio conveys a happy emotion.       0.00      0.00      0.00       0.0
+     the audio conveys a neutral emotion.       0.00      0.00      0.00       0.0
+   the audio conveys a sarcastic emotion.       0.00      0.00      0.00       0.0
+
+                                 accuracy                           0.00     156.0
+                                macro avg       0.00      0.00      0.00     156.0
+                             weighted avg       0.00      0.00      0.00     156.0

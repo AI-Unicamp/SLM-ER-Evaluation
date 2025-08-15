@@ -39,13 +39,20 @@ def extract_emotions(df):
                 predicted_emotions = df['output'].str.lower().tolist()
                 print("getting from output")
             except:
-                print("Error: 'predicted_emotion' column not found in CSV.")
-                sys.exit(1)
+                try:
+                    predicted_emotions = df['response'].str.lower().tolist()
+                    print("getting from response")
+                except:
+                    print("Error: 'predicted_emotion' column not found in CSV.")
+                    sys.exit(1)
+                
     
     fpath_col = "filename"
     if(fpath_col not in df.columns):
-        fpath_col = "file_path"
-        print("Using 'file_path' column instead of 'filename'")
+        fpath_col = "file_name"
+        if(fpath_col not in df.columns):
+            fpath_col = "file_path"
+            print("Using 'file_path' column instead of 'filename'")
 
     for filename in df[fpath_col]:
         parts = filename.split('_')

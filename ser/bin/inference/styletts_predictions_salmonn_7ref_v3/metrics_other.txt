@@ -1,0 +1,58 @@
+=== Emotion Prediction Analysis Metrics ===
+
+*** TRUE EMOTION vs PREDICTED EMOTION ***
+Overall Accuracy: 0.2404 (24.04%)
+F1 Macro Score: 0.0877
+
+=== Confusion Matrix ===
+Rows: True Emotion (from filename)
+Columns: Predicted Emotion
+
+True\Predicted	angry	happy	neutral	sad	the audio conveys a neutral emotion.
+angry		0	0	18	0	8
+happy		0	0	20	0	6
+neutral		0	0	25	0	1
+sad		0	0	25	0	1
+the audio conveys a neutral emotion.		0	0	0	0	0
+
+=== Detailed Classification Report ===
+                                      precision    recall  f1-score   support
+
+                               angry       0.00      0.00      0.00        26
+                               happy       0.00      0.00      0.00        26
+                             neutral       0.28      0.96      0.44        26
+                                 sad       0.00      0.00      0.00        26
+the audio conveys a neutral emotion.       0.00      0.00      0.00         0
+
+                            accuracy                           0.24       104
+                           macro avg       0.06      0.19      0.09       104
+                        weighted avg       0.07      0.24      0.11       104
+
+
+*** PROXY EMOTION vs PREDICTED EMOTION ***
+Overall Accuracy: 0.8462 (84.62%)
+F1 Macro Score: 0.1833
+
+=== Confusion Matrix ===
+Rows: Proxy Emotion (from filename)
+Columns: Predicted Emotion
+
+Proxy\Predicted	angry	happy	neutral	sad	the audio conveys a neutral emotion.
+angry		0	0	0	0	0
+happy		0	0	0	0	0
+neutral		0	0	88	0	16
+sad		0	0	0	0	0
+the audio conveys a neutral emotion.		0	0	0	0	0
+
+=== Detailed Classification Report ===
+                                      precision    recall  f1-score   support
+
+                               angry       0.00      0.00      0.00         0
+                               happy       0.00      0.00      0.00         0
+                             neutral       1.00      0.85      0.92       104
+                                 sad       0.00      0.00      0.00         0
+the audio conveys a neutral emotion.       0.00      0.00      0.00         0
+
+                            accuracy                           0.85       104
+                           macro avg       0.20      0.17      0.18       104
+                        weighted avg       1.00      0.85      0.92       104

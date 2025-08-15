@@ -1,0 +1,74 @@
+=== Emotion Prediction Analysis Metrics ===
+
+*** TRUE EMOTION vs PREDICTED EMOTION ***
+Overall Accuracy: 0.1026 (10.26%)
+F1 Macro Score: 0.0434
+
+=== Confusion Matrix ===
+Rows: True Emotion (from filename)
+Columns: Predicted Emotion
+
+True\Predicted	angry	happy	neutral	sad	the audio conveys a happy emotion.	the audio conveys a neutral emotion.	the audio conveys a sad emotion.	the audio conveys an angry emotion.	the audio conveys angry emotion.
+angry		0	0	7	0	3	18	7	4	0
+happy		0	0	8	0	3	22	4	2	0
+neutral		0	0	16	0	1	15	3	3	1
+sad		0	0	12	0	1	17	5	4	0
+the audio conveys a happy emotion.		0	0	0	0	0	0	0	0	0
+the audio conveys a neutral emotion.		0	0	0	0	0	0	0	0	0
+the audio conveys a sad emotion.		0	0	0	0	0	0	0	0	0
+the audio conveys an angry emotion.		0	0	0	0	0	0	0	0	0
+the audio conveys angry emotion.		0	0	0	0	0	0	0	0	0
+
+=== Detailed Classification Report ===
+                                      precision    recall  f1-score   support
+
+                               angry       0.00      0.00      0.00        39
+                               happy       0.00      0.00      0.00        39
+                             neutral       0.37      0.41      0.39        39
+                                 sad       0.00      0.00      0.00        39
+  the audio conveys a happy emotion.       0.00      0.00      0.00         0
+the audio conveys a neutral emotion.       0.00      0.00      0.00         0
+    the audio conveys a sad emotion.       0.00      0.00      0.00         0
+ the audio conveys an angry emotion.       0.00      0.00      0.00         0
+    the audio conveys angry emotion.       0.00      0.00      0.00         0
+
+                            accuracy                           0.10       156
+                           macro avg       0.04      0.05      0.04       156
+                        weighted avg       0.09      0.10      0.10       156
+
+
+*** PROXY EMOTION vs PREDICTED EMOTION ***
+Overall Accuracy: 0.0000 (0.00%)
+F1 Macro Score: 0.0000
+
+=== Confusion Matrix ===
+Rows: Proxy Emotion (from filename)
+Columns: Predicted Emotion
+
+Proxy\Predicted	angry	happy	neutral	sad	the audio conveys a happy emotion.	the audio conveys a neutral emotion.	the audio conveys a sad emotion.	the audio conveys an angry emotion.	the audio conveys angry emotion.
+angry		0	0	4	0	0	34	0	13	1
+happy		0	0	19	0	8	25	0	0	0
+neutral		0	0	0	0	0	0	0	0	0
+sad		0	0	20	0	0	13	19	0	0
+the audio conveys a happy emotion.		0	0	0	0	0	0	0	0	0
+the audio conveys a neutral emotion.		0	0	0	0	0	0	0	0	0
+the audio conveys a sad emotion.		0	0	0	0	0	0	0	0	0
+the audio conveys an angry emotion.		0	0	0	0	0	0	0	0	0
+the audio conveys angry emotion.		0	0	0	0	0	0	0	0	0
+
+=== Detailed Classification Report ===
+                                      precision    recall  f1-score   support
+
+                               angry       0.00      0.00      0.00      52.0
+                               happy       0.00      0.00      0.00      52.0
+                             neutral       0.00      0.00      0.00       0.0
+                                 sad       0.00      0.00      0.00      52.0
+  the audio conveys a happy emotion.       0.00      0.00      0.00       0.0
+the audio conveys a neutral emotion.       0.00      0.00      0.00       0.0
+    the audio conveys a sad emotion.       0.00      0.00      0.00       0.0
+ the audio conveys an angry emotion.       0.00      0.00      0.00       0.0
+    the audio conveys angry emotion.       0.00      0.00      0.00       0.0
+
+                            accuracy                           0.00     156.0
+                           macro avg       0.00      0.00      0.00     156.0
+                        weighted avg       0.00      0.00      0.00     156.0
