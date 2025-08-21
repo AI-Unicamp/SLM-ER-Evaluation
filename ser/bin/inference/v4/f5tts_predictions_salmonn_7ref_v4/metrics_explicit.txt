@@ -1,0 +1,62 @@
+=== Emotion Prediction Analysis Metrics ===
+
+*** TRUE EMOTION vs PREDICTED EMOTION ***
+Overall Accuracy: 0.2628 (26.28%)
+F1 Macro Score: 0.1587
+
+=== Confusion Matrix ===
+Rows: True Emotion (from filename)
+Columns: Predicted Emotion
+
+True\Predicted	angry	happy	neutral	sad	sad (sadness filled me as i packed my things)	sadness
+angry		20	9	3	6	1	0
+happy		17	11	0	10	1	0
+neutral		16	12	2	8	0	1
+sad		16	9	5	8	1	0
+sad (sadness filled me as i packed my things)		0	0	0	0	0	0
+sadness		0	0	0	0	0	0
+
+=== Detailed Classification Report ===
+                                               precision    recall  f1-score   support
+
+                                        angry       0.29      0.51      0.37        39
+                                        happy       0.27      0.28      0.28        39
+                                      neutral       0.20      0.05      0.08        39
+                                          sad       0.25      0.21      0.23        39
+sad (sadness filled me as i packed my things)       0.00      0.00      0.00         0
+                                      sadness       0.00      0.00      0.00         0
+
+                                     accuracy                           0.26       156
+                                    macro avg       0.17      0.18      0.16       156
+                                 weighted avg       0.25      0.26      0.24       156
+
+
+*** PROXY EMOTION vs PREDICTED EMOTION ***
+Overall Accuracy: 0.7885 (78.85%)
+F1 Macro Score: 0.4100
+
+=== Confusion Matrix ===
+Rows: Proxy Emotion (from filename)
+Columns: Predicted Emotion
+
+Proxy\Predicted	angry	happy	neutral	sad	sad (sadness filled me as i packed my things)	sadness
+angry		52	0	0	0	0	0
+happy		10	39	3	0	0	0
+neutral		0	0	0	0	0	0
+sad		7	2	7	32	3	1
+sad (sadness filled me as i packed my things)		0	0	0	0	0	0
+sadness		0	0	0	0	0	0
+
+=== Detailed Classification Report ===
+                                               precision    recall  f1-score   support
+
+                                        angry       0.75      1.00      0.86        52
+                                        happy       0.95      0.75      0.84        52
+                                      neutral       0.00      0.00      0.00         0
+                                          sad       1.00      0.62      0.76        52
+sad (sadness filled me as i packed my things)       0.00      0.00      0.00         0
+                                      sadness       0.00      0.00      0.00         0
+
+                                     accuracy                           0.79       156
+                                    macro avg       0.45      0.39      0.41       156
+                                 weighted avg       0.90      0.79      0.82       156

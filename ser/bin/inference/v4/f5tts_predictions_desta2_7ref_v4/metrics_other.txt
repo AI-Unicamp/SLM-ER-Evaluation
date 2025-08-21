@@ -1,0 +1,54 @@
+=== Emotion Prediction Analysis Metrics ===
+
+*** TRUE EMOTION vs PREDICTED EMOTION ***
+Overall Accuracy: 0.2981 (29.81%)
+F1 Macro Score: 0.1871
+
+=== Confusion Matrix ===
+Rows: True Emotion (from filename)
+Columns: Predicted Emotion
+
+True\Predicted	angry	happy	neutral	sad
+angry		2	22	2	0
+happy		0	26	0	0
+neutral		1	22	3	0
+sad		0	20	6	0
+
+=== Detailed Classification Report ===
+              precision    recall  f1-score   support
+
+       angry       0.67      0.08      0.14        26
+       happy       0.29      1.00      0.45        26
+     neutral       0.27      0.12      0.16        26
+         sad       0.00      0.00      0.00        26
+
+    accuracy                           0.30       104
+   macro avg       0.31      0.30      0.19       104
+weighted avg       0.31      0.30      0.19       104
+
+
+*** PROXY EMOTION vs PREDICTED EMOTION ***
+Overall Accuracy: 0.1058 (10.58%)
+F1 Macro Score: 0.0478
+
+=== Confusion Matrix ===
+Rows: Proxy Emotion (from filename)
+Columns: Predicted Emotion
+
+Proxy\Predicted	angry	happy	neutral	sad
+angry		0	0	0	0
+happy		0	0	0	0
+neutral		3	90	11	0
+sad		0	0	0	0
+
+=== Detailed Classification Report ===
+              precision    recall  f1-score   support
+
+       angry       0.00      0.00      0.00         0
+       happy       0.00      0.00      0.00         0
+     neutral       1.00      0.11      0.19       104
+         sad       0.00      0.00      0.00         0
+
+    accuracy                           0.11       104
+   macro avg       0.25      0.03      0.05       104
+weighted avg       1.00      0.11      0.19       104

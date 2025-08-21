@@ -1,0 +1,66 @@
+=== Emotion Prediction Analysis Metrics ===
+
+*** TRUE EMOTION vs PREDICTED EMOTION ***
+Overall Accuracy: 0.2821 (28.21%)
+F1 Macro Score: 0.1594
+
+=== Confusion Matrix ===
+Rows: True Emotion (from filename)
+Columns: Predicted Emotion
+
+True\Predicted	angry	happy	neutral	sad	sad (sadness filled me as i packed my things)	sad (sadness filled me as i petted my things)	sadness
+angry		17	10	2	9	1	0	0
+happy		15	12	3	8	0	0	1
+neutral		13	12	8	5	0	1	0
+sad		16	10	5	7	1	0	0
+sad (sadness filled me as i packed my things)		0	0	0	0	0	0	0
+sad (sadness filled me as i petted my things)		0	0	0	0	0	0	0
+sadness		0	0	0	0	0	0	0
+
+=== Detailed Classification Report ===
+                                               precision    recall  f1-score   support
+
+                                        angry       0.28      0.44      0.34        39
+                                        happy       0.27      0.31      0.29        39
+                                      neutral       0.44      0.21      0.28        39
+                                          sad       0.24      0.18      0.21        39
+sad (sadness filled me as i packed my things)       0.00      0.00      0.00         0
+sad (sadness filled me as i petted my things)       0.00      0.00      0.00         0
+                                      sadness       0.00      0.00      0.00         0
+
+                                     accuracy                           0.28       156
+                                    macro avg       0.18      0.16      0.16       156
+                                 weighted avg       0.31      0.28      0.28       156
+
+
+*** PROXY EMOTION vs PREDICTED EMOTION ***
+Overall Accuracy: 0.7821 (78.21%)
+F1 Macro Score: 0.3562
+
+=== Confusion Matrix ===
+Rows: Proxy Emotion (from filename)
+Columns: Predicted Emotion
+
+Proxy\Predicted	angry	happy	neutral	sad	sad (sadness filled me as i packed my things)	sad (sadness filled me as i petted my things)	sadness
+angry		51	1	0	0	0	0	0
+happy		6	42	4	0	0	0	0
+neutral		0	0	0	0	0	0	0
+sad		4	1	14	29	2	1	1
+sad (sadness filled me as i packed my things)		0	0	0	0	0	0	0
+sad (sadness filled me as i petted my things)		0	0	0	0	0	0	0
+sadness		0	0	0	0	0	0	0
+
+=== Detailed Classification Report ===
+                                               precision    recall  f1-score   support
+
+                                        angry       0.84      0.98      0.90        52
+                                        happy       0.95      0.81      0.88        52
+                                      neutral       0.00      0.00      0.00         0
+                                          sad       1.00      0.56      0.72        52
+sad (sadness filled me as i packed my things)       0.00      0.00      0.00         0
+sad (sadness filled me as i petted my things)       0.00      0.00      0.00         0
+                                      sadness       0.00      0.00      0.00         0
+
+                                     accuracy                           0.78       156
+                                    macro avg       0.40      0.34      0.36       156
+                                 weighted avg       0.93      0.78      0.83       156
