@@ -1,0 +1,13 @@
+slm,tts_model,accuracy,f1_macro,pct_txt_pred_error,pct_txt_pred_error_implicit,pct_txt_pred_error_explicit
+desta2,COSY,29.57%,0.26,74.06%,34.47%,37.54%
+desta2,F5TTS,26.44%,0.23,73.53%,34.64%,36.27%
+desta2,STYLE,29.81%,0.27,76.03%,35.96%,39.04%
+flamingo3,COSY,35.34%,0.34,86.62%,26.39%,40.15%
+flamingo3,F5TTS,31.25%,0.31,95.45%,32.87%,40.21%
+flamingo3,STYLE,30.10%,0.30,92.71%,32.29%,39.58%
+qwen,COSY,26.44%,0.22,65.69%,25.49%,36.60%
+qwen,F5TTS,27.64%,0.23,69.44%,28.57%,38.21%
+qwen,STYLE,27.40%,0.22,68.21%,27.81%,38.41%
+salmonn,COSY,26.94%,0.24,61.13%,7.64%,30.23%
+salmonn,F5TTS,29.37%,0.26,64.95%,8.59%,31.62%
+salmonn,STYLE,29.23%,0.26,63.82%,12.29%,34.47%
