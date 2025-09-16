@@ -1,6 +1,6 @@
 [submodule "SLM_eval/Audio_Flamingo3"]
 	path = SLM_eval/Audio_Flamingo3
-	url = https://github.com/NVIDIA/audio-flamingo.git
+	url = https://github.com/AI-Unicamp/audio-flamingo.git
 	branch = audio_flamingo_3
 [submodule "SLM_eval/DeSTA2"]
 	path = SLM_eval/DeSTA2
