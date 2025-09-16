@@ -1,6 +1,3 @@
-[submodule "SLM_eval/DeSTA2"]
-	path = SLM_eval/DeSTA2
-	url = https://github.com/kehanlu/DeSTA2.git
 [submodule "SLM_eval/SALMONN"]
 	path = SLM_eval/SALMONN
 	url = https://github.com/bytedance/SALMONN.git
@@ -8,3 +5,7 @@
 	path = SLM_eval/Audio_Flamingo3
 	url = https://github.com/NVIDIA/audio-flamingo.git
 	branch = audio_flamingo_3
+[submodule "SLM_eval/DeSTA2"]
+	path = SLM_eval/DeSTA2
+	url = https://github.com/ProdCor/DeSTA2.git
+	branch = main
