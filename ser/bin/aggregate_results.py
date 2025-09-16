@@ -31,7 +31,9 @@ def parse_filename(filename):
         wav_emo = parts[3]
         tts = parts[5]
 
-    return txt_emo, txt_cond, wav_emo, tts
+    lbl_full = f'{wav_emo}_proxy_{txt_emo}' if wav_emo != txt_emo else f'{wav_emo}_cong'
+
+    return txt_emo, txt_cond, wav_emo, lbl_full, tts
 
 def apply_parsing(df, slm_name):
     if slm_name == 'salmonn':
@@ -44,7 +46,7 @@ def apply_parsing(df, slm_name):
         filename = df['filename']
         new_columns = df['filename'].apply(parse_filename)
     
-    df = pd.DataFrame(new_columns.tolist(), columns=['txt_emo', 'txt_cond', 'wav_emo', 'tts_model'])
+    df = pd.DataFrame(new_columns.tolist(), columns=['txt_emo', 'txt_cond', 'wav_emo', 'lbl_full', 'tts_model'])
     df['filename'] = filename
     return df
 
