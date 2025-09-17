@@ -14,11 +14,15 @@ Download the ESD dataset (https://github.com/HLTSingapore/Emotional-Speech-Data)
 
 Each folder inside ```/speech_generation/``` directs to instructions on how to run each speech generation process per TTS system.
 
-### Evaluating the Spoken Language Models on th Emotion Recognition Task
+### Evaluating the Spoken Language Models on Emotion Recognition
 
 Download the EMIS dataset (https://ieee-dataport.org/documents/emotionally-incongruent-synthetic-speech-dataset-emis), or use other speech samples to evaluate each SLM. The default path for sample analysis is ```/SLM_eval/EMIS_dataset/```.
 
 Each folder inside ```/SLM_eval/``` directly opens up a fork for all evaluated SLMs repositories, all containing individual ```README.md```, ```environment.yml```, ```requirements.txt``` and added/modified scripts from each original repository.
+
+### Extracting Results from SLMs' Outputs
+
+In the ```ser``` folder, you will find information on how to extract and consolidate results from each SLM output.
 
 ## Citation
 
