@@ -12,39 +12,7 @@ In this work, we evaluate four SLMs on the task of speech emotion recognition us
 
 Download the ESD dataset (https://github.com/HLTSingapore/Emotional-Speech-Data). We filtered this dataset for English speakers only. You can allocate the filtered version in ```/speech_generation/ESD_english/```.
 
-#### CosyVoice2
-
-```bash
-
-cd speech_generation/cosyvoice
-
-python generante_samples_cosyvoice.py
-
-```
-
-#### F5-TTS
-
-```bash
-
-cd speech_generation/f5tts
-
-TBD
-
-```
-
-#### StyleTTS2
-
-```bash
-
-cd speech_generation/styletts2
-
-python batch_inference.py \
-    --esd <path to original ESD dataset> \
-    --txts <path to generated emotional sentences> \
-    --esd_ser_test <path to SER test_set> \
-    --out <output directory>
-
-```
+Each folder inside ```/speech_generation/``` directs to instructions on how to run each speech generation process per TTS system.
 
 ### Evaluating the Spoken Language Models on th Emotion Recognition Task
 
