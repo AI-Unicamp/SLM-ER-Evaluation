@@ -1,4 +1,4 @@
-# Evaluating Emotion Recognition of Spoken Language Models on Emotionally Incongruent Speech
+# Evaluating Emotion Recognition in Spoken Language Models on Emotionally Incongruent Speech
 
 > Pedro Corrêa, João Lima, Victor Moreno, Lucas Ueda, Paula Costa
 
