@@ -1,4 +1,4 @@
-# Evaluating Spoken Language Models for Speech Emotion Recognition
+# Evaluating Emotion Recognition of Spoken Language Models on Emotionally Incongruent Speech
 
 > Pedro Corrêa, João Lima, Victor Moreno, Lucas Ueda, Paula Costa
 
@@ -8,37 +8,53 @@ In this work, we evaluate four SLMs on the task of speech emotion recognition us
 
 ## Usage
 
-### Load Model
+### Generating Speech Samples with each TTS system
 
+Download the ESD dataset (https://github.com/HLTSingapore/Emotional-Speech-Data). We filtered this dataset for English speakers only. You can allocate the filtered version in ```/speech_generation/ESD_english/```.
 
-### Have fun!
+#### CosyVoice2
 
-```python
-messages = [
-            {"role": "system", "content": "You are a helpful voice assistant."},
-            {"role": "audio", "content": "<path_to_audio_file>"},
-            {"role": "user", "content": "Describe the audio."}
-        ]
+```bash
 
-generated_ids = model.chat(
-    messages, 
-    max_new_tokens=128, 
-    do_sample=True, 
-    temperature=0.6, 
-    top_p=0.9
-)
+cd speech_generation/cosyvoice
 
-response = model.tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
-print(response)
+python generante_samples_cosyvoice.py
+
 ```
 
+#### F5-TTS
 
-### Examples
+```bash
 
+cd speech_generation/f5tts
+
+TBD
+
+```
+
+#### StyleTTS2
+
+```bash
+
+cd speech_generation/styletts2
+
+python batch_inference.py \
+    --esd <path to original ESD dataset> \
+    --txts <path to generated emotional sentences> \
+    --esd_ser_test <path to SER test_set> \
+    --out <output directory>
+
+```
+
+### Evaluating the Spoken Language Models on th Emotion Recognition Task
+
+Download the EMIS dataset (https://ieee-dataport.org/documents/emotionally-incongruent-synthetic-speech-dataset-emis), or use other speech samples to evaluate each SLM. The default path for sample analysis is ```/SLM_eval/EMIS_dataset/```.
+
+Each folder inside ```/SLM_eval/``` directly opens up a fork for all evaluated SLMs repositories, all containing individual ```README.md```, ```environment.yml```, ```requirements.txt``` and added/modified scripts from each original repository.
 
 ## Citation
 
-if you find our work useful, please consider citing the paper:
+Consider citing this paper if you find our work useful:
 
 ```
 TBD
