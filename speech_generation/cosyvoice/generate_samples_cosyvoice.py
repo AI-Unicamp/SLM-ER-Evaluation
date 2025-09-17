@@ -1,4 +1,3 @@
-# File: run_pipeline.py (Main execution script)
 """
 Main execution script for the emotional speech pipeline with CSV support
 Place this in the root directory alongside your CSV files
