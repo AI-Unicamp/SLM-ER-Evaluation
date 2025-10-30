@@ -29,5 +29,13 @@ In the ```ser``` folder, you will find information on how to extract and consoli
 Consider citing this paper if you find our work useful:
 
 ```
-TBD
+@misc{corrêa2025evaluatingemotionrecognitionspoken,
+      title={Evaluating Emotion Recognition in Spoken Language Models on Emotionally Incongruent Speech}, 
+      author={Pedro Corrêa and João Lima and Victor Moreno and Paula Dornhofer Paro Costa},
+      year={2025},
+      eprint={2510.25054},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2510.25054}, 
+}
 ```
