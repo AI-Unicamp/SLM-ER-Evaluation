@@ -21,13 +21,13 @@ from f5_tts.infer.utils_infer import (
 )
 from f5_tts.model import DiT
 
-BASE_REFERENCE_PATH = '/home/joao.lima/data/ESD'
+BASE_REFERENCE_PATH = '<PATH TO >/data/ESD'
 
-FULL_CSV_FILE_PATH = '/home/joao.lima/experiments/StyleTTS2/emotion_sentences_dataset.csv'
+FULL_CSV_FILE_PATH = '<PATH TO >/experiments/StyleTTS2/emotion_sentences_dataset.csv'
 
-TEST_SET_CSV_FILE_PATH = '/home/joao.lima/experiments/StyleTTS2/esd_test.csv'
+TEST_SET_CSV_FILE_PATH = '<PATH TO >/experiments/StyleTTS2/esd_test.csv'
 
-OUTPUT_DIR = '/home/victor.moreno/paper_pedro_2025/audio_generator/ref'
+OUTPUT_DIR = '<PATH TO >/audio_generator/ref'
 OUTPUT_METADATA_DIR = os.path.join(OUTPUT_DIR, 'metadata') 
 
 EMOTIONS_TO_USE = ['Angry', 'Happy', 'Neutral', 'Sad']

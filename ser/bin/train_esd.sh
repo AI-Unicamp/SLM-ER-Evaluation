@@ -1,13 +1,12 @@
 #!/bin/bash
 #SBATCH --job-name=emotion2vec_esd_train # Job name for Slurm
-#SBATCH --output=/home/lucas.ueda/slurm/emotion2vec_esd_train_%j.out # Standard output file
-#SBATCH --error=/home/lucas.ueda/slurm/emotion2vec_esd_train_%j.err   # Standard error file
+#SBATCH --output=slurm/emotion2vec_esd_train_%j.out # Standard output file
+#SBATCH --error=slurm/emotion2vec_esd_train_%j.err   # Standard error file
 #SBATCH --ntasks=1                   # Run on a single CPU core/task
 #SBATCH --time=2-00:00:00            # Maximum 2 days (adjust as needed for full training)
 #SBATCH --mem=128G                   # Request 128GB of memory (adjust based on dataset size and GPU memory)
 #SBATCH --partition=l40s             # Specify your Slurm partition (e.g., 'l40s', 'h100')
 #SBATCH --gres=gpu:1                 # Request 1 GPU
-#SBATCH --mail-user=l156368@dac.unicamp.br # Your email for notifications
 #SBATCH --mail-type=BEGIN,END,FAIL   # Email notifications for job events
 
 # Load Miniconda and activate your environment
@@ -16,8 +15,8 @@ conda activate emotion2vec
 
 # --- Define Project and Data Paths ---
 # <--- IMPORTANT: Adjust these paths to match your actual directory structure --->
-PROJECT_ROOT="/home/lucas.ueda/github/SLM-ER-Evaluation/ser"
-ESD_FILES_ROOT="/home/lucas.ueda/expressive_datasets/esd/files" # Base directory for raw WAV files
+PROJECT_ROOT="<PATH TO REPOSITORY>"
+ESD_FILES_ROOT="<PATH TO ESD FILES>/files" # Base directory for raw WAV files
 EMOTION2VEC_MODEL_DIR="${PROJECT_ROOT}/upstream" # Directory containing Fairseq model definitions
 EMOTION2VEC_CHECKPOINT="${PROJECT_ROOT}/pretrained_model/emotion2vec_base/emotion2vec_base.pt" # Path to your pre-trained model checkpoint
 FEATURES_DIR="${PROJECT_ROOT}/scripts/esd_features" # Directory for extracted .npy, .lengths, .emo files

@@ -1,13 +1,12 @@
 #!/bin/bash
 #SBATCH --job-name=emotion2vec_feat_extract # Job name for Slurm
-#SBATCH --output=/home/lucas.ueda/slurm/emotion2vec_feat_extract_%j.out # Standard output file
-#SBATCH --error=/home/lucas.ueda/slurm/emotion2vec_feat_extract_%j.err   # Standard error file
+#SBATCH --output=slurm/emotion2vec_feat_extract_%j.out # Standard output file
+#SBATCH --error=slurm/emotion2vec_feat_extract_%j.err   # Standard error file
 #SBATCH --ntasks=1                   # Run on a single CPU core/task
 #SBATCH --time=0-23:00:00            # Maximum 8 hours for feature extraction (adjust as needed)
 #SBATCH --mem=64G                    # Request 64GB of memory (adjust based on dataset size)
 #SBATCH --partition=l40s             # Specify your Slurm partition (e.g., 'l40s', 'h100')
 #SBATCH --gres=gpu:1                 # Request 1 GPU
-#SBATCH --mail-user=l156368@dac.unicamp.br # Your email for notifications
 #SBATCH --mail-type=BEGIN,END,FAIL   # Email notifications for job events
 
 # Load Miniconda and activate your environment
